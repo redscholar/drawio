@@ -1,31 +1,20 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15" version="28.0.7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15" version="28.2.5">
   <diagram name="第 1 页" id="U6peYYjzT9KnF7U7tv9T">
-    <mxGraphModel dx="1018" dy="673" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1414" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="LeuzwvILITXPN2abdKCn-2" value="ks-console" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="64" y="80" width="100" height="720" as="geometry" />
+        <mxCell id="LeuzwvILITXPN2abdKCn-2" value="browser" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="64" y="80" width="100" height="750" as="geometry" />
         </mxCell>
-        <mxCell id="LeuzwvILITXPN2abdKCn-21" value="5. 替换http请求数据的host" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="LeuzwvILITXPN2abdKCn-2" vertex="1">
+        <mxCell id="LeuzwvILITXPN2abdKCn-21" value="将http请求循环发送到云端" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="LeuzwvILITXPN2abdKCn-2" vertex="1">
           <mxGeometry x="45" y="540" width="10" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="LeuzwvILITXPN2abdKCn-3" value="ks-apiserver" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="224" y="80" width="100" height="720" as="geometry" />
+        <mxCell id="LeuzwvILITXPN2abdKCn-3" value="ks-console" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="224" y="80" width="100" height="750" as="geometry" />
         </mxCell>
-        <mxCell id="LeuzwvILITXPN2abdKCn-4" value="ks-controller-manager" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="384" y="80" width="100" height="960" as="geometry" />
-        </mxCell>
-        <mxCell id="LeuzwvILITXPN2abdKCn-28" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="LeuzwvILITXPN2abdKCn-4" vertex="1">
-          <mxGeometry x="46" y="790" width="10" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="LeuzwvILITXPN2abdKCn-29" value="定时任务" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="LeuzwvILITXPN2abdKCn-4" target="LeuzwvILITXPN2abdKCn-28" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="51" y="770" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="81" y="800" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="LeuzwvILITXPN2abdKCn-4" value="ks-posthog" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="384" y="80" width="100" height="1060" as="geometry" />
         </mxCell>
         <mxCell id="LeuzwvILITXPN2abdKCn-5" value="1. 收集页面运行数据" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry width="60" relative="1" as="geometry">
@@ -33,18 +22,15 @@
             <mxPoint x="273.5" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LeuzwvILITXPN2abdKCn-6" value="redis" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="544" y="80" width="100" height="960" as="geometry" />
-        </mxCell>
-        <mxCell id="LeuzwvILITXPN2abdKCn-7" value="2. 缓存http请求" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" parent="1" edge="1">
+        <mxCell id="LeuzwvILITXPN2abdKCn-7" value="2. 缓存http请求" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" parent="1" edge="1" target="LeuzwvILITXPN2abdKCn-4">
           <mxGeometry x="0.0027" width="60" relative="1" as="geometry">
             <mxPoint x="273.75" y="210" as="sourcePoint" />
-            <mxPoint x="594.25" y="210" as="targetPoint" />
+            <mxPoint x="440" y="200" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="LeuzwvILITXPN2abdKCn-11" value="cloud" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="704" y="80" width="100" height="960" as="geometry" />
+          <mxGeometry x="704" y="80" width="100" height="1060" as="geometry" />
         </mxCell>
         <mxCell id="LeuzwvILITXPN2abdKCn-12" value="1. 获取需要上报的数据" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry width="60" relative="1" as="geometry">
@@ -56,15 +42,15 @@
           <mxGeometry x="74" y="140" width="550" height="110" as="geometry" />
         </mxCell>
         <mxCell id="LeuzwvILITXPN2abdKCn-17" value="前端数据上报" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=170;height=20;" parent="1" vertex="1">
-          <mxGeometry x="24" y="490" width="760" height="270" as="geometry" />
+          <mxGeometry x="24" y="490" width="760" height="310" as="geometry" />
         </mxCell>
-        <mxCell id="LeuzwvILITXPN2abdKCn-18" value="2. 获取缓存的http请求" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" parent="1" edge="1">
+        <mxCell id="LeuzwvILITXPN2abdKCn-18" value="2. 获取缓存的http请求" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" parent="1" edge="1" target="LeuzwvILITXPN2abdKCn-4">
           <mxGeometry width="60" relative="1" as="geometry">
             <mxPoint x="274" y="560" as="sourcePoint" />
             <mxPoint x="594" y="560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LeuzwvILITXPN2abdKCn-19" value="3. 返回http请求数据" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+        <mxCell id="LeuzwvILITXPN2abdKCn-19" value="3. 返回http请求数据" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1" source="LeuzwvILITXPN2abdKCn-4">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="589" y="580" as="sourcePoint" />
             <mxPoint x="273.5" y="580" as="targetPoint" />
@@ -85,46 +71,80 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="LeuzwvILITXPN2abdKCn-27" value="后端数据上报" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=170;height=20;" parent="1" vertex="1">
-          <mxGeometry x="334" y="810" width="450" height="230" as="geometry" />
+          <mxGeometry x="334" y="860" width="450" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="LeuzwvILITXPN2abdKCn-30" value="1. 从redis 获取缓存数据" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" parent="1" edge="1">
+        <mxCell id="LeuzwvILITXPN2abdKCn-33" value="3.上报数据到云端" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry width="60" relative="1" as="geometry">
-            <mxPoint x="433.5" y="940" as="sourcePoint" />
-            <mxPoint x="593.5" y="940" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="LeuzwvILITXPN2abdKCn-32" value="2. 返回http请求数据" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="593.5" y="970" as="sourcePoint" />
-            <mxPoint x="433.5" y="970" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="LeuzwvILITXPN2abdKCn-33" value="3. 上报数据到云端" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="60" relative="1" as="geometry">
-            <mxPoint x="434" y="1000" as="sourcePoint" />
-            <mxPoint x="754" y="1000" as="targetPoint" />
+            <mxPoint x="440" y="959.5" as="sourcePoint" />
+            <mxPoint x="754" y="959.5" as="targetPoint" />
             <Array as="points" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J1S162dikZyfsjg46pWH-5" value="2. 缓存http请求" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" edge="1" parent="1">
-          <mxGeometry x="0.0027" width="60" relative="1" as="geometry">
-            <mxPoint x="433.75" y="400" as="sourcePoint" />
-            <mxPoint x="593.5" y="400" as="targetPoint" />
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="J1S162dikZyfsjg46pWH-6" value="后端收集数据" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=170;height=20;" vertex="1" parent="1">
+        <mxCell id="J1S162dikZyfsjg46pWH-6" value="后端收集数据" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=170;height=20;" parent="1" vertex="1">
           <mxGeometry x="320" y="290" width="300" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="J1S162dikZyfsjg46pWH-10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
-          <mxGeometry x="430" y="350" width="10" height="40" as="geometry" />
+        <mxCell id="J1S162dikZyfsjg46pWH-10" value="sqlite" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="430" y="350" width="10" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="J1S162dikZyfsjg46pWH-11" value="定时收集集群数据" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="J1S162dikZyfsjg46pWH-10" parent="1">
+        <mxCell id="J1S162dikZyfsjg46pWH-11" value="定时收集集群数据" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" target="J1S162dikZyfsjg46pWH-10" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="435" y="330" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="465" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FLOl-QTgAv-K77iDa5yH-1" value="7. 返回上报结果" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="755" y="740" as="sourcePoint" />
+            <mxPoint x="115" y="740" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FLOl-QTgAv-K77iDa5yH-2" value="8. 将上报结果（成功，失败）传给后端" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" edge="1" parent="1" source="LeuzwvILITXPN2abdKCn-2" target="LeuzwvILITXPN2abdKCn-4">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="300" y="540" as="sourcePoint" />
+            <mxPoint x="460" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="260" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FLOl-QTgAv-K77iDa5yH-3" value="4. 获取上报结果" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="LeuzwvILITXPN2abdKCn-11">
+          <mxGeometry x="-0.0016" relative="1" as="geometry">
+            <mxPoint x="746.5" y="980" as="sourcePoint" />
+            <mxPoint x="430" y="980" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LeuzwvILITXPN2abdKCn-28" value="sqlite" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="350" y="900" width="10" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FLOl-QTgAv-K77iDa5yH-6" value="2.返回定量数据" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="LeuzwvILITXPN2abdKCn-28" target="LeuzwvILITXPN2abdKCn-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550.25" y="950" as="sourcePoint" />
+            <mxPoint x="389.75" y="950" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="940" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FLOl-QTgAv-K77iDa5yH-9" value="1. 定时任务" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" edge="1" parent="1" source="LeuzwvILITXPN2abdKCn-4" target="LeuzwvILITXPN2abdKCn-28">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="574" y="920" as="sourcePoint" />
+            <mxPoint x="500" y="920" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="910" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FLOl-QTgAv-K77iDa5yH-10" value="成功：出队&lt;br&gt;&lt;div&gt;失败：重新入队&lt;/div&gt;" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" edge="1" parent="1" source="LeuzwvILITXPN2abdKCn-4" target="LeuzwvILITXPN2abdKCn-28">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="524" y="890" as="sourcePoint" />
+            <mxPoint x="450" y="890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="1030" />
             </Array>
           </mxGeometry>
         </mxCell>
